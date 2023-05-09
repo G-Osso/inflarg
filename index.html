@@ -4,14 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inflarg</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
     </style>
 </head>
 <body>
     <header>
-        <img src="./img/inflarg_logo.png.jpg" alt="Logo de inflarg" class="logo" />
+        <img src="./assets/img/inflarg_logo.png - copia.jpg" alt="Logo de inflarg" class="logo" />
 
         <nav class="navbar">
             <ul class="navbar-list">
@@ -22,56 +22,82 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-        <img src="./img/cart-icon.jpg" alt="Carrito de compras" class="cart-icon">
+        <img src="./assets/img/cart-icon.jpg" alt="Carrito de compras" class="cart-icon">
 
     </header>
 
     <main>
-        <section id="producto">
+        <section id="elemento">
 
-            <div class="producto2">
+            <div class="elemento2">
                <h1>Evalúa según la inflación del momento</h1>
-               <br> </br>
                <p>Inflarg es la página más completa de Argentina con datos del <span>Indec</span> que aseguran la precisión sobre la inflación, según fecha y productos.</p> 
-               <br> </br>
                <a href="#">Be Inflargento</a>
             </div>
 
-            <div class="producto-card">
-                <div>
-                    <img src="./img/balanza-comercial.png" alt="">
-                </div>
-
-                <div class="producto-card-info">
+            <div class="elemento-card">
+                    <img src="./assets/img/balanza-comercial.png" alt="">
+                    <div class="elemento-card-info">
             <!-- contenedor 1--> 
-                    <div class="producto-card-top">   
-                       <h3>The most accurate </h3>
+                    <div class="elemento-card-top">   
+                       <h3>The most accurate</h3>
                        <span>7.8</span>
-                    </div> <!--producto-card-top-->
+                    </div> <!--elemento-card-top-->
                
             <!-- contenedor 2 --> 
-            
-                    <div class="producto-card-bottom"> 
-                        <div class="producto-card-inflargento">
-                            <img src="./img/inflargento.png" alt="Imagen de usuario">
+                    <div class="elemento-card-bottom"> 
+                        <div class="elemento-card-inflargento">
+                            <img src="./assets/img/inflargento.png" alt="Imagen de usuario">
 
                             <div class="usuario-info">
-                            <p>Usuario</p>  
-                            <p>Sixto Luna</p>
-
+                                <p>Usuario</p>  
+                                <p>Sixto Luna</p>
                             </div> <!--usuario-info-->
-                        </div><!--producto-card-inflargento-->
+                        </div><!--elemento-card-inflargento-->
 
-                        <div class="">
+                        <div class="elemento-card-inflation">
                            <p>inflación</p>
                            <span>155%</span>
                             <span>vehículo</span>
-                        </div>
+                        </div> <!--elemento-card-inflation-->
+                    
+                    </div><!--elemento-card-bottom!-->
 
-                    </div><!--producto-card-inflargento-->
-                </div> <!--producto-card-info !-->
-            </div> <!--producto-card-->
-        </section>
+                    
+                    </div> <!--elemento-card-info !-->
+            </div> <!--elemento-card-->
+        </section> <!-- #elemento -->
+
+        <section id="info">
+            <h2>Conocé el valor de tu producto según la inflación</h2>
+
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <img src="./assets/img/timeline.png" alt="fechas">
+                    <h3>Registrá fechas</h3>
+                    <p>Establecé dentro la línea de tiempo desde fecha de compra hasta fecha de venta para conocer la inflación exacta y así el valor exacto de tu producto. </p>
+                </div><!--.info-card-->
+                <div class="info-card">
+                    <img src="./assets/img/timelineUp.png" alt="porcentaje de inflación">
+                    <h3>Calculá el total de tu producto</h3>
+                    <p>Una vez que hayas registrado las fechas, conocé el porcentaje de inflación (según Indec.) para calcular el valor total de tu producto.</p>
+                </div><!--.info-card-->
+                <div class="info-card">
+                    <img src="./assets/img/timelineSave&Print.png" alt="guardá los cambios para legalizar el trámite">
+                    <h3>Guardá el registro</h3>
+                    <p>Proporcioná datos para guardar el registro de inflación de tu producto y así poder acceder a ello al realizar la compra/venta.</p>
+                </div><!--.info-card-->
+                <div class="info-card">
+                    <img src="./assets/img/sellingstageIcon.png" alt="Venta de producto">
+                    <h3>Compra/venta del producto </h3>
+                    <p>Accedé a la pagina nuevamente con tu usuario y comenzá a vender legalmente tu producto.</p>
+                </div><!--.info-card-->
+            </div> <!--.info-cards-container-->
+
+
+        </section><!--#info-->
+
+
     </main>
 
 

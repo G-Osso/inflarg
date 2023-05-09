@@ -3,38 +3,27 @@
     background-color: rgb(10, 10, 61);
 }
 
-/* font
-@import url("./font/Alkatra.zip")>;
- */
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+
 :root {
-  /* bg colors */
-  --background: #02050e;
+/*  bg colors */
   --primary: #1e50ff;
   --secondary: rgb(77, 77, 212);
-  --btn-bg: #050d26;
-  --bg-azul-10: #e9eeff;
-  --bg-white: #fff;
-  --bg-electric: #f0fbff;
-  --nav-bg: #0f1525;
+  --nav-bg: beige;
 
-  /* Text colors */
+
+/* Text colors */
   --text-gray: #adb9c7;
   --text-white: #f3f4f6;
 
-  /* Decoration */
+
+/*Decoration */
   --fire: #ff6d00;
   --electric: #64d3ff;
+
 }
 
-header {
-    background: rgb(214, 214, 181);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 65px;
-    padding: 0px 30px 0px 30px;
-}
 
 *{
     margin: 0;
@@ -49,29 +38,36 @@ header {
     padding: 0px 30px 0px 30px;
 }
 
+header {
+    background: rgb(214, 214, 181);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px 0px 30px;
+}
+
 .logo {
     height: 40%;
 }
 
-.navbar,
+
 .navbar-list {
     display: flex;
     align-items: center; /*eje vertical*/
     justify-content: center; /*eje horizontal*/
 }
 
-
 .navbar {
     gap: 150px;
 }
-
 
 .navbar-list {
     gap: 30px;
 }
 
 .nav-list a {
-    color: var(--text-gray);
     font-size: 14px;
 }
 
@@ -93,16 +89,14 @@ header {
 /*Main*/
 
 main {
-    /*background: var(--background);*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: beige;
     width: 100%;
 }
 
-#producto {
+#elemento {
     margin-top:65px;
     padding: 70px 0;
     max-width: 1200px;
@@ -111,14 +105,14 @@ main {
     align-items: center;
 }
 
-.producto2 {
+.elemento2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;
 }
 
-.producto2 h1 {
+.elemento2 h1 {
     font-size: 40px;
     width: 100%;
     min-width: 500px;
@@ -126,11 +120,12 @@ main {
     color: var(--text-white);
 }
 
-.producto2 p > span {
+.elemento2 p > span {
     font-weight: 800;
+    color: beige;
 }
 
-.producto2 a {
+.elemento2 a {
     color: rgb(10, 10, 61);
     background-color: beige;
     width: 120px;
@@ -140,9 +135,9 @@ main {
     font-size: 14px;
 }
 
-.producto-card {
+.elemento-card {
 width:300px;
-backgroung: beige;
+background: beige;
 padding: 20px;
 border-radius: 15px;
 display: flex;
@@ -151,20 +146,21 @@ justify-content: center;
 gap: 20px;
 }
 
-.producto-card-info {
+.elemento-card-info {
     display: flex;
     flex-direction: column;
     gap: 10px; 
 }
 
-.producto-card-top {
+.elemento-card-top {
+    color: beige;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 10px;
 }
 
-.producto-card-top h3 {
+.elemento-card-top h3 {
     font-weight: 600;
     font-size: 16px;
     white-space: nowrap;
@@ -172,7 +168,7 @@ gap: 20px;
     text-overflow: ellipsis;
 }
 
-.producto-card-top span {
+.elemento-card-top span {
     color: rgb(10, 10, 61);
     background-color: beige;
     text-align: center;
@@ -182,19 +178,73 @@ gap: 20px;
     border-radius: 10px;
 }
 
-.producto-card-inflargento img {
+.elemento-card-inflargento img {
     height: 50px;
     width: 40px;
     background-color: beige;
 }
 
-.producto-card-bottom {
+.elemento-card-bottom {
     display: flex;
     justify-content: space-between;
 }
 
-.producto-card-inflargento {
+.elemento-card-inflargento {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+/*info card*/
+#info {
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#info h2 {
+    font-size:32px;
+    font-weight: 800;
+    color: beige;
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.info-card {
+    width: 500px;
+    height: 350px;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: beige;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.info-card img {
+    width: 200px;
+}
+
+.info-card h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color:beige;
+}
+
+.info-card p {
+    font-size: 14px;
+    font-weight: 300;
+    color: beige;
 }
