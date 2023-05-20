@@ -8,12 +8,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
     </style>
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
 </head>
 <body>
     <header>
         <img src="./assets/img/inflarg_logo.png - copia.jpg" alt="Logo de inflarg" class="logo" />
 
         <nav class="navbar">
+
+           <label for="menu-toggle" class="menu-label">
+                <img src="./assets/img/menu.png" alt="menu.icon">
+
+           </label> <!--.menu-label-->
+
+           <input type="checkbox" id="menu-toggle">
+
+
+           <!--Comienza el menú-->
             <ul class="navbar-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Divisiones</a></li>
@@ -21,15 +32,41 @@
                 <li><a href="#">Línea de tiempo por incremento</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-        </nav>
-        <img src="./assets/img/cart-icon.jpg" alt="Carrito de compras" class="cart-icon">
+
+            <label for="cart-toggle" class="cart-label">
+                <img src="./assets/img/cart-icon.jpg" alt="Carrito de compras" class="cart-icon"/>
+            </label> <!--.cart-label-->
+            <input type="checkbox" id="cart-toggle">
+
+            <div class="cart">
+                <h2>Inflarg...</h2>
+
+                <div class="cart-item">
+                    <img src="./assets/img/gol.png" alt="">
+
+                <div class="item-info">
+                        <h3 class="item-title">Vehículo: VW Gol trend</h3>
+                        <p class="item-bid">Auto (Manual - Gris oscuro)</p>
+                        <span class="item-price">$3.599.000</span>
+                </div> <!--.item-info-->
+
+
+                <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                </div><!--.item-handler-->
+
+                </div><!--.cart-item-->
+            </div> <!--.cart-->
+        </nav> <!--.navbar-->
 
     </header>
 
     <main>
         <section id="elemento">
 
-            <div class="elemento2">
+            <div class="elemento-info">
                <h1>Evalúa según la inflación del momento</h1>
                <p>Inflarg es la página más completa de Argentina con datos del <span>Indec</span> que aseguran la precisión sobre la inflación, según fecha y productos.</p> 
                <a href="#">Be Inflargento</a>
@@ -38,32 +75,30 @@
             <div class="elemento-card">
                     <img src="./assets/img/balanza-comercial.png" alt="">
                     <div class="elemento-card-info">
-            <!-- contenedor 1--> 
-                    <div class="elemento-card-top">   
-                       <h3>The most accurate</h3>
-                       <span>7.8</span>
-                    </div> <!--elemento-card-top-->
-               
-            <!-- contenedor 2 --> 
-                    <div class="elemento-card-bottom"> 
-                        <div class="elemento-card-inflargento">
-                            <img src="./assets/img/inflargento.png" alt="Imagen de usuario">
+                <!-- contenedor 1--> 
+                        <div class="elemento-card-top">   
+                            <h3>The most accurate</h3>
+                            <span>7.8</span>
+                        </div> <!--elemento-card-top-->
+                
+                <!-- contenedor 2 --> 
+                        <div class="elemento-card-bottom"> 
+                            <div class="elemento-card-inflargento">
+                                <img src="./assets/img/inflargento.png" alt="Imagen de usuario">
 
-                            <div class="usuario-info">
-                                <p>Usuario</p>  
-                                <p>Sixto Luna</p>
-                            </div> <!--usuario-info-->
-                        </div><!--elemento-card-inflargento-->
+                                <div class="usuario-info">
+                                    <p>Usuario</p>  
+                                    <p>Sixto Luna</p>
+                                </div> <!--usuario-info-->
+                            </div><!--elemento-card-inflargento-->
 
-                        <div class="elemento-card-inflation">
-                           <p>inflación</p>
-                           <span>155%</span>
-                            <span>vehículo</span>
-                        </div> <!--elemento-card-inflation-->
-                    
-                    </div><!--elemento-card-bottom!-->
+                            <div class="elemento-card-inflation">
+                                <p>inflación</p>
+                                <span>155%</span>
+                                <span>vehículo</span>
+                            </div> <!--elemento-card-inflation-->                        
+                        </div><!--elemento-card-bottom!-->
 
-                    
                     </div> <!--elemento-card-info !-->
             </div> <!--elemento-card-->
         </section> <!-- #elemento -->
@@ -94,15 +129,82 @@
                 </div><!--.info-card-->
             </div> <!--.info-cards-container-->
 
-
         </section><!--#info-->
+
+        <section id="products">
+            <h2>Nivel general</h2>
+
+            <!--categorías-->
+            <div class="categories">
+                <button class="category active">🍗🥛Alimentos y bebidas no alcohólicas</button>
+                <button class="category">🍺🚬Bebidas alcohólicas y tabaco</button>
+                <button class="category">👗👖👞👠Vestimenta y calzado</button>
+                <button class="category">🏠Viviendas, agua, electricidad, gas y otros combustibles</button>
+                <button class="category">🔧🏡Equipamiento y mantenimiento del hogar</button>
+                <button class="category">🏥Salud</button>
+                <button class="category">🚗Transporte</button>
+                <button class="category">📞Comunicación</button>
+                <button class="category">🎡🗽Recreación y cultura</button>
+                <button class="category">🏫📚Educación</button>
+                <button class="category">🍽🏨Restaurantes y hoteles</button>
+                <button class="category">💰Bienes y servicios varios</button>
+
+            </div> <!--.categorías-->
+
+            <!--products-->
+            <div class="products-container">
+                <!--product 1-->
+                <div class="product">
+                    <img src="./assets/img/gol.png" alt="car-gol">
+                    <div class="product-info">
+                        <!--top-->
+                        <div class="product-top">
+                            <h3>Vehículo: VW Gol trend</h3>
+                            <p>Manual - Gris oscuro</p>
+                        </div> <!--.product-top-->
+
+                        <!--mid-->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user">
+                                <p>@claramartinez</p>
+                            </div> <!--.product-user-->
+                            <span>1.6 - 95.000km</span>
+                        </div> <!--.product-mid-->
+
+                        <!--bot-->
+                        <div class="product-bot">
+                            <div class="offer-dateandtime">
+                                <img src="./assets/img/calendar.png" alt="calendar">
+                                <p>2023-05-15 , 9:45hs</p>
+                            </div> <!--.offer-date&time-->
+                            <button class="btn-add">Add</button>
+                        </div> <!--.product-bot-->
+
+                    </div> <!---product-info-->
+
+                </div> <!--.product-->
+            </div> <!--.products-container-->
+
+
+            <button class="btn-load">Ver Más</button>
+
+        </section> <!--#products-->
+
 
 
     </main>
 
 
     <footer>
-
+        <div>
+          <ul class="footer-links">
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Trabajá con Nosotros</a></li>
+            <li><a href="#">Soporte</a></li>
+          </ul>
+        </div>
+        <p>Be an <span>Inflargento</span></p>
     </footer>
 
 
