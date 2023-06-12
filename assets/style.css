@@ -1,6 +1,8 @@
 
 *{
     background-color: rgb(10, 10, 61);
+    /*background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(59,59,93,1) 51%, rgba(255,193,0,0.3246090672597164) 100%);*/
 }
 
 /*font*/
@@ -228,7 +230,7 @@ gap: 20px;
     display: flex;
     align-items: center;
     text-align: center;
-    background: beige;
+    background: radial-gradient(rgb(219, 219, 180),rgb(10, 10, 61) );
     border-radius: 10px;
     gap: 20px;
 }
@@ -240,13 +242,19 @@ gap: 20px;
 .info-card h3 {
     font-weight: 600;
     font-size: 18px;
-    color:beige;
+    background: linear-gradient(to right, grey, blue);
+    color:transparent;
+    background-clip: text; 
+    -webkit-background-clip: text;
 }
 
 .info-card p {
     font-size: 14px;
     font-weight: 300;
-    color: beige;
+    background: linear-gradient(to right, rgb(119, 119, 67), rgb(25, 25, 51));
+    color:transparent;
+    background-clip: text; 
+    -webkit-background-clip: text;
 }
 
 /*Categories section*/
@@ -504,6 +512,30 @@ header {
   border: 1px solid var(--electric);
 }
 
+.container {
+  background-color: beige;
+  display: flex;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+  /*Creamos la animación*/
+  @keyframes skew {
+    0% {
+      transform: skew(0deg);
+    }
+    100% {
+      transform: skew(10deg);
+    }
+  }
+  
+  /* Usamos la animación */
+  .skew {
+    animation: skew 2s infinite;
+  }
+
   /* footer */
 footer {
     background: var(--background);
@@ -531,4 +563,10 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
+  }
+
+  .first-letter::first-letter {
+    color: beige;
+    font-size: 2rem;
+    letter-spacing: 0.2rem; 
   }
