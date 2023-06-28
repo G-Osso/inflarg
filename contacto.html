@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+    </style>
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/inflarg_logo.png - copia.jpg" alt="Logo de inflarg" class="logo" />
+
+        <nav class="navbar">
+
+           <label for="menu-toggle" class="menu-label">
+                <img src="./assets/img/menu.png" alt="menu.icon">
+
+           </label> <!--.menu-label-->
+
+           <input type="checkbox" id="menu-toggle">
+
+
+           <!--Comienza el menú-->
+           
+           <ul class="navbar-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">Acerca de nosotros</a></li>
+                <li><a href="#info">Línea de tiempo por incremento</a></li>
+                <li><a href="#products">Divisiones</a></li>
+                <li><a href="contacto.html"target="_blank">Contacto</a></li>
+                <li><a href="https://www.indec.gob.ar/"target="_blank">Indec</a></li>
+            </ul>
+
+
+            <label for="cart-toggle" class="cart-label">
+                <img src="./assets/img/cart-icon.jpg" alt="Carrito de compras" class="cart-icon"/>
+            </label> <!--.cart-label-->
+            <input type="checkbox" id="cart-toggle">
+
+        </nav> <!--.navbar-->
+
+    </header>
+
+    <a href="index.html">Go back to home</a>
+
+    <main>
+        <form action="">
+            <fieldset class="fondoinfo-per">
+                <legend class="fondoinfo-per">Información personal</legend>
+           
+                    <h3>Género</h3>
+           
+                    <span>Masculino</span>
+                    <input type="radio" name="gender" value="male">
+                    <span>Femenino</span>
+                    <input type="radio" name="gender" value="female">
+                    <span>No binario</span>
+                    <input type="radio" name="gender" value="intersex"><br>
+
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" placeholder="Name"><br>
+                   
+                    <label for="surname">Apellido:</label>
+                    <input type="text" name="surname" placeholder="surname"><br>
+
+
+                    <label for="age">Edad:</label>
+                    <input type="number" name="age" placeholder="age"><br>
+
+
+                    <!-- Nacionalidad-->
+                    <h3>Nacionalidad</h3>
+                    <select name="Nationality">
+                        <option value="Argentino">Argentino</option>                        
+                        <option value="Alemán">Alemán</option>
+                        <option value="Boliviano">Boliviano</option>
+                        <option value="Brazilero">Brazilero</option>
+                        <option value="Chileno">Chileno</option>
+                        <option value="Chino">Chino</option>
+                        <option value="Colombiano">Colombiano</option>
+                        <option value="Dominicano">Dominicano</option>
+                        <option value="Francés">Francés</option>
+                        <option value="Italiano">Italiano</option>
+                        <option value="Japonés">Japonés</option>
+                        <option value="Paraguayo">Paraguayo/option>
+                        <option value="Peruano">Peruano</option>
+                        <option value="Ucraniano">Ucraniano</option>
+                        <option value="Uruguayo">Uruguayo</option>
+                        <option value="Venezolano">Venezolano</option>
+                        <option value="Ruso">Ruso</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <br>
+
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Email"><br>
+
+
+                    <label for="Phone">Celular:</label>
+                    <input type="number" name="Phone" placeholder="number"><br>
+
+
+                    <label for="comment">Comentarios:</label><br>
+                    <textarea name="comment" cols="50" rows="10"></textarea><br>
+                    <input type="submit" value="ENVIAR">
+                </fieldset>
+
+
+
+            <section class="fondo-selector">
+                <h3>Nivel de conocimiento</h3>
+                <span>Principiante</span>
+                <input type="radio" name="level of English" value="beginner">
+                <span>Intermedio</span>
+                <input type="radio" name="level of English" value="intermediate">
+                <span>Avanzado</span>
+                <input type="radio" name="level of English" value="advanced">
+            </section>
+
+            <div class="fondo-selector">
+                <h3>¿Cómo nos encontraste?</h3>
+            
+                <span>Publicidad televisiva</span>
+                <input type="radio" name="Interests" value="business">
+                <span>Noticias</span>
+                <input type="radio" name="Interests" value="Personal">
+                <span>Web</span>
+                <input type="radio" name="Interests" value="School or University">
+                <span>Facebook</span>
+                <input type="radio" name="Interests" value="Travelling">
+                <span>Instagram</span>  
+                <input type="radio" name="Interests" value="Job improvement">
+            </div>
+
+
+            <h3>Checkbox</h3>
+            <span>Acepto terminos y condiciones</span>
+            <input type="checkbox" name="accept" value="1" />
+           
+            <br>
+            <input type="submit" value="ENVIAR">
+
+    </main>
+
+    <footer>
+        <div>
+          <ul class="footer-links">
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Trabajá con Nosotros</a></li>
+            <li><a href="#">Soporte</a></li>
+          </ul>
+        </div>
+        <p>© 2023 - Desarrollado por <span>G-Osso</span>.</p>
+    </footer>
+
+</body>
+</html>

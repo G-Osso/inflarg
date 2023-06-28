@@ -54,9 +54,9 @@
     }
 
 
-/*elemento*/
+/*hero*/
 
-    .elemento-info {
+    .hero-info {
         width: 100%;
         text-align: center;
         justify-content: center;
@@ -64,18 +64,18 @@
         gap: 30px;
     }
 
-    .elemento-info h1 {
+    .hero-info h1 {
         width: 90%;
         max-width: 500px;
         min-width: unset; 
     }
 
-    .elemento-info p {
+    .hero-info p {
         width: 60%;
         max-width: 600px;
     }
 
-    .elemento-card {
+    .hero-card {
         display: none;
     }
 
@@ -117,8 +117,8 @@
         flex-wrap: wrap;
     }
 
-/* elemento */
-    .elemento-info p {
+/* hero */
+    .hero-info p {
         width: 70%;
         max-width: unset;
     }

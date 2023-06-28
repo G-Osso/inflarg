@@ -25,13 +25,18 @@
 
 
            <!--Comienza el menú-->
-            <ul class="navbar-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Divisiones</a></li>
-                <li><a href="#">Noticias de economía</a></li>
-                <li><a href="#">Línea de tiempo por incremento</a></li>
-                <li><a href="#">Contacto</a></li>
+           
+           <ul class="navbar-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="aboutus.html">Acerca de nosotros</a></li>
+                <li><a href="#info">Línea de tiempo por incremento</a></li>
+                <li><a href="#products">Divisiones</a></li>
+                <li><a href="./contacto.html"target="_blank">Contacto</a></li>
+                <li><a href="https://www.indec.gob.ar/"target="_blank">Indec</a></li>
+                <!--<li><a href="./pages/login.html">Iniciar Sesión</a></li>
+                <li><a href="./pages/register.html">Registrarme</a></li>-->
             </ul>
+
 
             <label for="cart-toggle" class="cart-label">
                 <img src="./assets/img/cart-icon.jpg" alt="Carrito de compras" class="cart-icon"/>
@@ -44,18 +49,18 @@
                 <div class="cart-item">
                     <img src="./assets/img/gol.png" alt="">
 
-                <div class="item-info">
-                        <h3 class="item-title">Vehículo: VW Gol trend</h3>
-                        <p class="item-bid">Auto (Manual - Gris oscuro)</p>
-                        <span class="item-price">$3.599.000</span>
-                </div> <!--.item-info-->
+                    <div class="item-info">
+                            <h3 class="item-title">Vehículo: VW Gol trend</h3>
+                            <p class="item-bid">Auto (Manual - Gris oscuro)</p>
+                            <span class="item-price">$3.599.000</span>
+                    </div> <!--.item-info-->
 
 
-                <div class="item-handler">
-                    <span class="quantity-handler down">-</span>
-                    <span class="item-quantity">1</span>
-                    <span class="quantity-handler up">+</span>
-                </div><!--.item-handler-->
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div><!--.item-handler-->
 
                 </div><!--.cart-item-->
             </div> <!--.cart-->
@@ -64,44 +69,56 @@
     </header>
 
     <main>
-        <section id="elemento">
 
-            <div class="elemento-info">
+        <section class="content">
+            <div class="content_text text">
+                <h1 class="content_text_title">Become an Inflargento ASAP</h1>
+                    <div class="content_text_btns">
+                        <a href="./pages/login.html"class="btn"><span class="btn btn--login">Iniciar Sesión</span></a>
+                        <a href="./pages/register.html" class="btn btn--register">Registrarme</a>
+                    </div><!--.content_text_btns-->
+            </div><!--.content_text text-->
+        </section><!--.content-->
+
+
+        <section id="hero">
+
+            <div class="hero-info">
                <h1 class="first-letter">Evalúa según la inflación del momento</h1>
-               <p>Inflarg es la página más completa de Argentina con datos del <span>Indec</span> que aseguran la precisión sobre la inflación, según fecha y productos.</p> 
+                    <p class="container">Inflarg es la página más completa de Argentina con datos del <span>Indec</span> que aseguran la precisión sobre la inflación, según fecha y productos.</p> 
                <a href="#">Be Inflargento</a>
             </div>
 
-            <div class="elemento-card">
+            <div class="hero-card">
                     <img src="./assets/img/balanza-comercial.png" alt="">
-                    <div class="elemento-card-info">
+                    <div class="hero-card-info">
                 <!-- contenedor 1--> 
-                        <div class="elemento-card-top">   
+                        <div class="hero-card-top">   
                             <h3>The most accurate</h3>
                             <span>7.8</span>
-                        </div> <!--elemento-card-top-->
+                        </div> <!--hero-card-top-->
                 
                 <!-- contenedor 2 --> 
-                        <div class="elemento-card-bottom"> 
-                            <div class="elemento-card-inflargento">
+                        <div class="hero-card-bottom"> 
+                            <div class="hero-card-inflargento">
                                 <img src="./assets/img/inflargento.png" alt="Imagen de usuario">
 
                                 <div class="usuario-info">
                                     <p>Usuario</p>  
                                     <p>Sixto Luna</p>
                                 </div> <!--usuario-info-->
-                            </div><!--elemento-card-inflargento-->
+                            </div><!--hero-card-inflargento-->
 
-                            <div class="elemento-card-inflation">
+                            <div class="hero-card-inflation">
                                 <p>inflación</p>
                                 <span>155%</span>
                                 <span>vehículo</span>
-                            </div> <!--elemento-card-inflation-->                        
-                        </div><!--elemento-card-bottom!-->
+                            </div> <!--hero-card-inflation-->                        
+                        </div><!--hero-card-bottom!-->
 
-                    </div> <!--elemento-card-info !-->
-            </div> <!--elemento-card-->
-        </section> <!-- #elemento -->
+                    </div> <!--hero-card-info !-->
+            </div> <!--hero-card-->
+        </section> <!-- #hero -->
 
         <section id="info">
             <h2>Conocé el valor de tu producto según la inflación</h2>
@@ -184,9 +201,7 @@
                     </div> <!---product-info-->
 
                 </div> <!--.product-->
-            </div> <!--.products-container-->
-
-
+            </div> <!--.products-container--
             <button class="btn-load">Ver Más</button>
 
         </section> <!--#products-->
@@ -206,16 +221,23 @@
     </main>
 
 
-    <footer>
-        <div>
-          <ul class="footer-links">
-            <li><a href="#">Términos de Uso</a></li>
-            <li><a href="#">Trabajá con Nosotros</a></li>
-            <li><a href="#">Soporte</a></li>
-          </ul>
-        </div>
-        <p>Be an <span>Inflargento</span></p>
-    </footer>
+        <footer>
+            <div>
+            <ul class="footer-links">
+                <li><a href="#">Términos de Uso</a></li>
+                <li><a href="#">Trabajá con Nosotros</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+            </div>
+
+            <div >
+                <p class="copywright">© 2023 - Desarrollado por <span>G-Osso</span>.
+                    <a href="index.html">
+                        <img width="100" src="./assets/img/g-osso.logo.png" alt="" class="logo">
+                    </a>
+                </p>
+            </div>
+        </footer>
 
 
 </body>
